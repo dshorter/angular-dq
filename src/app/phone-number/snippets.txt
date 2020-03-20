@@ -1,0 +1,5 @@
+if (this.phone.length < 4){
+         this.result =  'Fail'
+    } else {
+         this.result =  'Pass'
+    }
