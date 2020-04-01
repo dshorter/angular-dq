@@ -4,10 +4,10 @@ import { Directive, OnInit, forwardRef } from "@angular/core";
 @Directive({
   selector: "[phoneNanp]",
   providers: [
-    { provide: NG_VALIDATORS, useExisting: phoneNanpDirective, multi: true }
+    { provide: NG_VALIDATORS, useExisting: PhoneNanpDirective, multi: true }
   ]
 })
-export class phoneNanpDirective implements Validator, OnInit {
+export class PhoneNanpDirective implements Validator, OnInit {
   ngOnInit() {}
 
   validate(c: FormControl) {
