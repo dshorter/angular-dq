@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Component, Submit } from "@angular/core";
 
 @Component({
   selector: "app-phone-number",
@@ -12,7 +13,7 @@ export class PhoneNumberComponent implements OnInit {
   constructor() {}
 
   onSubmit() {
-    this.submitted = true;
+    this. = true;
   }
 
   ngOnInit() {}
