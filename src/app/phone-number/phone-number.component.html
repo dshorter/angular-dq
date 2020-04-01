@@ -1,11 +1,18 @@
+<form #myForm="ngForm">
+	<!-- 	<input type="text"
+        (keyup)="OnKeyUp($event)"/>
+{{result}} -->
+	<input type="text"
+          name="numVal"
+          phoneNanp #numValSpy />
 
-<!--  
-<p>
-phone-number works!
-</p>
--->
-
-<input type="text" 
-        (keyup)="OnKeyUp($event)"/>    
-<p >{{result}}</p>
-
+	<div *ngIf="!numVal.valid && (numVal.dirty ||numVal.touched)">
+		<div *ngIf="numVal.errors.gte">
+			The number should be greater than {{numVal.errors.requiredValue}}
+		</div>
+	</div>
+	numValspy: {{numValSpy.text}}
+	<p>
+		<button type="submit" [disabled]="!myForm.valid">Submit</button>
+	</p>
+</form>
