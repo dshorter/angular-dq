@@ -8,7 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { PhoneNumberComponent } from './phone-number/phone-number.component';
 import { PhoneNanpDirective } from './validators/phone-nanp.directive';
-
+ 
 @NgModule({
   imports: [
     BrowserModule,
