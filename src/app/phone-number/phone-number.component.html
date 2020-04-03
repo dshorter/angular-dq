@@ -1,8 +1,8 @@
 <form #myForm="ngForm">
-	<!-- 	<input type="text"
+		<input type="text"
         (keyup)="OnKeyUp($event)"/>
-{{result}} -->
-	<input type="text"
+{{result}}
+<!-- 	<input type="text"
           name="numVal"
           phoneNanp #numValSpy />
 
@@ -10,8 +10,8 @@
 		<div *ngIf="numVal.errors.gte">
 			The number should be greater than {{numVal.errors.requiredValue}}
 		</div>
-	</div>
-	numValspy: {{dfkdfklidgfjlij}}
+	</div> -->
+	
 	<p>
 		<button type="submit" [disabled]="!myForm.valid">Submit</button>
 	</p>

@@ -13,18 +13,20 @@ export class PhoneNumberComponent implements OnInit {
   constructor() {}
 
   onSubmit() {
-    this. = true;
+    
   }
 
   ngOnInit() {}
 
   OnKeyUp(event: any) {
+    
     this.phone = event.target.value;
     let regexpNumber: RegExp = new RegExp(
       "^(\\+\\d{1,2}\\s)?\\(?\\d{3}\\)?[\\s.-]\\d{3}[\\s.-]\\d{4}$"
     );
     this.result = regexpNumber.test(this.phone);
-    if (regexpNumber.test(this.phone) == true) {
+    //  alert(this.result)
+    if (regexpNumber.test(this.phone) ) {
       this.result = "Pass!";
     } else {
       this.result = "Fail";
